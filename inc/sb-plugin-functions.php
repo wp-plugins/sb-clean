@@ -1,11 +1,7 @@
 <?php
-defined('ABSPATH') OR exit;
-
 function sb_clean_check_core() {
     $activated_plugins = get_option('active_plugins');
-
     $sb_core_installed = in_array('sb-core/sb-core.php', $activated_plugins);
-
     if(!$sb_core_installed) {
         $sb_plugins = array(SB_CLEAN_BASENAME);
         $activated_plugins = get_option('active_plugins');
@@ -19,7 +15,7 @@ sb_clean_check_core();
 
 function sb_clean_activation() {
     if(!sb_clean_check_core()) {
-        wp_die(sprintf(__('You must install plugin %1$s first! Click here to %2$s.', 'sb-clean'), '<a href="https://wordpress.org/plugins/sb-core/">SB Core</a>', sprintf('<a href="%1$s">%2$s</a>', admin_url('plugins.php'), __('go back', 'sb-clean'))));
+        wp_die(sprintf(__('You must install and activate plugin %1$s first! Click here to %2$s.', 'sb-clean'), '<a href="https://wordpress.org/plugins/sb-core/">SB Core</a>', sprintf('<a href="%1$s">%2$s</a>', admin_url('plugins.php'), __('go back', 'sb-clean'))));
     }
     do_action('sb_clean_activation');
 }
@@ -39,7 +35,11 @@ function sb_clean_textdomain() {
 }
 add_action('plugins_loaded', 'sb_clean_textdomain');
 
-$options = get_option('sb_options');
+if(class_exists('SB_Option')) {
+    $options = SB_Option::get();
+} else {
+    $options = get_option('sb_options');
+}
 
 function sb_clean_wp_files() {
     $file_path = trailingslashit(ABSPATH) . 'readme.html';
@@ -48,7 +48,7 @@ function sb_clean_wp_files() {
     SB_PHP::delete_file($file_path);
 }
 
-$result = isset($options["clean"]["head_meta"]) ? $options["clean"]["head_meta"] : 1;
+$result = isset($options['clean']['head_meta']) ? $options['clean']['head_meta'] : 1;
 if((bool)$result) {
     remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
     remove_action('wp_head', 'feed_links');
@@ -58,7 +58,7 @@ if((bool)$result) {
     remove_action('wp_head', 'wlwmanifest_link');
 }
 
-$result = isset($options["clean"]["wpdb"]) ? $options["clean"]["wpdb"] : 1;
+$result = isset($options['clean']['wpdb']) ? $options['clean']['wpdb'] : 1;
 if((bool)$result) {
     unset($GLOBALS['wpdb']->dbpassword);
     unset($GLOBALS['wpdb']->dbname);

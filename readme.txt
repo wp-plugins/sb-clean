@@ -4,7 +4,7 @@ Donate link: http://hocwp.net/donate/
 Tags: sb, clean, sb plugin, sb clean, sb team
 Requires at least: 3.9
 Tested up to: 4.0
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,13 +39,17 @@ SB Clean is a plugin that allows to clean up your WordPress site. You can clean 
 
 * [SB Paginate](https://wordpress.org/plugins/sb-paginate/)
 * [SB TBFA](https://wordpress.org/plugins/sb-tbfa/)
-* [SB Clean](https://wordpress.org/plugins/sb-tbfa/)
+* [SB Comment](https://wordpress.org/plugins/sb-comment/)
+* [SB Post Widget](https://wordpress.org/plugins/sb-post-widget/)
 
 == Installation ==
 
-Upload the SB Clean plugin to your blog, activate it.
+Install this plugin from your WordPress site Dashboard or follow these steps below:
 
-1, 2, 3: You're done!
+1. Download plugin from WordPress Plugins directory.
+1. Upload the `sb-clean` folder to the `/wp-content/plugins/` directory.
+1. Activate the SB Clean plugin through the 'Plugins' menu in WordPress.
+1. Configure the plugin by going to the `SB Options` menu that appears in your admin menu.
 
 == Frequently Asked Questions ==
 
@@ -57,12 +61,15 @@ Please visit [homepage](http://hocwp.net) for more details.
 
 == Upgrade Notice ==
 
-Since version 1.0.1 or later, you must install the plugin [SB Core](https://wordpress.org/plugins/sb-core/) first.
+Please update SB Core before you upgrade this plugin to new version.
 
 == Changelog ==
 
-= V1.0.1 =
+= 1.0.2 =
+* Update: Get options from global variable.
+
+= 1.0.1 =
 * New: Split core functions, you must install [SB Core](https://wordpress.org/plugins/sb-core/) before activate this plugin.
 
-= V1.0.0 =
-First release of SB Clean.
+= 1.0.0 =
+First release of this plugin.
