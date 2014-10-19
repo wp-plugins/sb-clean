@@ -22,7 +22,13 @@ function sb_clean_wpdb_callback() {
     $options = SB_Option::get();
     $value = isset($options['clean']['wpdb']) ? $options['clean']['wpdb'] : 1;
     $description = __('You can turn on or turn off the function to unset database name and password.', 'sb-clean');
-    SB_Field::switch_button($name, 'sb_options[clean][wpdb]', $value, $description);
+    $args = array(
+        'id' => 'sb_clean_wpdb',
+        'name' => $name,
+        'value' => $value,
+        'description' => $description
+    );
+    SB_Field::switch_button($args);
 }
 
 function sb_clean_head_meta_callback() {
@@ -30,7 +36,13 @@ function sb_clean_head_meta_callback() {
     $options = SB_Option::get();
     $value = isset($options['clean']['head_meta']) ? $options['clean']['head_meta'] : 1;
     $description = __('You can turn on or turn off the function to clear WordPress head meta.', 'sb-clean');
-    SB_Field::switch_button($name, 'sb_options[clean][head_meta]', $value, $description);
+    $args = array(
+        'id' => 'sb_clean_head_meta',
+        'name' => $name,
+        'value' => $value,
+        'description' => $description
+    );
+    SB_Field::switch_button($args);
 }
 
 function sb_clean_sanitize($input) {

@@ -11,15 +11,17 @@ function sb_clean_check_core() {
     return $sb_core_installed;
 }
 
-sb_clean_check_core();
-
 function sb_clean_activation() {
     if(!sb_clean_check_core()) {
         wp_die(sprintf(__('You must install and activate plugin %1$s first! Click here to %2$s.', 'sb-clean'), '<a href="https://wordpress.org/plugins/sb-core/">SB Core</a>', sprintf('<a href="%1$s">%2$s</a>', admin_url('plugins.php'), __('go back', 'sb-clean'))));
     }
     do_action('sb_clean_activation');
 }
-register_activation_hook( SB_CLEAN_FILE, 'sb_clean_activation' );
+register_activation_hook(SB_CLEAN_FILE, 'sb_clean_activation');
+
+if(!sb_clean_check_core()) {
+    return;
+}
 
 function sb_clean_settings_link($links) {
     if(sb_clean_check_core()) {

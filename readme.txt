@@ -4,7 +4,7 @@ Donate link: http://hocwp.net/donate/
 Tags: sb, clean, sb plugin, sb clean, sb team
 Requires at least: 3.9
 Tested up to: 4.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,7 +21,7 @@ SB Clean is a plugin that allows to clean up your WordPress site. You can clean 
 **Features**
 
 * Delete readme.html file.
-* Delete license.txt file
+* Delete license.txt file.
 * Clean up head meta.
 * Unset global database name and password.
 * Change the default image size, align and image link.
@@ -37,16 +37,19 @@ SB Clean is a plugin that allows to clean up your WordPress site. You can clean 
 
 **Recommended WordPress Plugins**
 
-* [SB Paginate](https://wordpress.org/plugins/sb-paginate/)
-* [SB TBFA](https://wordpress.org/plugins/sb-tbfa/)
+* [SB Banner Widget](https://wordpress.org/plugins/sb-banner-widget/)
 * [SB Comment](https://wordpress.org/plugins/sb-comment/)
+* [SB Paginate](https://wordpress.org/plugins/sb-paginate/)
+* [SB Login Page](https://wordpress.org/plugins/sb-login-page/)
 * [SB Post Widget](https://wordpress.org/plugins/sb-post-widget/)
+* [SB Tab Widget](https://wordpress.org/plugins/sb-tab-widget/)
+* [SB TBFA](https://wordpress.org/plugins/sb-tbfa/)
 
 == Installation ==
 
 Install this plugin from your WordPress site Dashboard or follow these steps below:
 
-1. Download plugin from WordPress Plugins directory.
+1. Download plugin from WordPress Plugins directory and extract it.
 1. Upload the `sb-clean` folder to the `/wp-content/plugins/` directory.
 1. Activate the SB Clean plugin through the 'Plugins' menu in WordPress.
 1. Configure the plugin by going to the `SB Options` menu that appears in your admin menu.
@@ -65,11 +68,14 @@ Please update SB Core before you upgrade this plugin to new version.
 
 == Changelog ==
 
+= 1.0.3 =
+Update new check core functions.
+
 = 1.0.2 =
-* Update: Get options from global variable.
+Update: Get options from global variable.
 
 = 1.0.1 =
-* New: Split core functions, you must install [SB Core](https://wordpress.org/plugins/sb-core/) before activate this plugin.
+New: Split core functions, you must install [SB Core](https://wordpress.org/plugins/sb-core/) before activate this plugin.
 
 = 1.0.0 =
 First release of this plugin.
