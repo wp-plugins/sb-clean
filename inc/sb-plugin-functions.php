@@ -16,7 +16,7 @@ register_activation_hook(SB_CLEAN_FILE, 'sb_clean_activation');
 function sb_clean_check_admin_notices() {
     if(!sb_clean_check_core()) {
         unset($_GET['activate']);
-        printf('<div class="error"><p><strong>' . __('Error', 'sb-banner-widget') . ':</strong> ' . __('The plugin with name %1$s has been deactivated because of missing %2$s plugin', 'sb-tbfa') . '.</p></div>', '<strong>SB Clean</strong>', sprintf('<a target="_blank" href="%s" style="text-decoration: none">SB Core</a>', 'https://wordpress.org/plugins/sb-core/'));
+        printf('<div class="error"><p><strong>' . __('Error', 'sb-clean') . ':</strong> ' . __('The plugin with name %1$s has been deactivated because of missing %2$s plugin', 'sb-clean') . '.</p></div>', '<strong>SB Clean</strong>', sprintf('<a target="_blank" href="%s" style="text-decoration: none">SB Core</a>', 'https://wordpress.org/plugins/sb-core/'));
         deactivate_plugins(SB_CLEAN_BASENAME);
     }
 }
