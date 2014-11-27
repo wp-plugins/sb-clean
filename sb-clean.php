@@ -4,7 +4,7 @@ Plugin Name: SB Clean
 Plugin URI: http://hocwp.net/
 Description: SB Clean is a plugin that allows to clean up your WordPress site.
 Author: SB Team
-Version: 1.0.4
+Version: 1.0.5
 Author URI: http://hocwp.net/
 Text Domain: sb-clean
 Domain Path: /languages/

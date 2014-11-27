@@ -3,8 +3,8 @@ Contributors: skylarkcob
 Donate link: http://hocwp.net/donate/
 Tags: sb, clean, sb plugin, sb clean, sb team
 Requires at least: 3.9
-Tested up to: 4.0
-Stable tag: 1.0.4
+Tested up to: 4.0.1
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,6 +67,9 @@ Please visit [homepage](http://hocwp.net) for more details.
 Please update SB Core before you upgrade this plugin to new version.
 
 == Changelog ==
+
+= 1.0.5 =
+Update check core functions.
 
 = 1.0.4 =
 Update check core function.
