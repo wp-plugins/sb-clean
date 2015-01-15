@@ -14,8 +14,18 @@ function sb_clean_setting_field() {
     SB_Admin_Custom::add_section('sb_clean_section', __('SB Clean options page', 'sb-clean'), 'sb_clean');
     SB_Admin_Custom::add_setting_field('sb_clean_wpdb', __('Clean WPDB', 'sb-clean'), 'sb_clean_section', 'sb_clean_wpdb_callback', 'sb_clean');
     SB_Admin_Custom::add_setting_field('sb_clean_head_meta', __('Clean head meta', 'sb-clean'), 'sb_clean_section', 'sb_clean_head_meta_callback', 'sb_clean');
+    SB_Admin_Custom::add_setting_field('sb_clean_post_revision', __('Clean post revisions', 'sb-clean'), 'sb_clean_section', 'sb_clean_post_revision_callback', 'sb_clean');
 }
 add_action('sb_admin_init', 'sb_clean_setting_field');
+
+function sb_clean_post_revision_callback() {
+    $args = array(
+        'text' => __('Process', 'sb-clean'),
+        'field_class' => 'sb-clean-post-revision',
+        'description' => __('Start to clean all post revisions on your database.', 'sb-clean')
+    );
+    SB_Field::button($args);
+}
 
 function sb_clean_wpdb_callback() {
     $name = 'sb_options[clean][wpdb]';

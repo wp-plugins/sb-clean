@@ -1,47 +1,51 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: sb-clean\n"
-"POT-Creation-Date: 2014-09-28 11:44+0700\n"
-"PO-Revision-Date: 2014-09-28 13:18+0700\n"
+"POT-Creation-Date: 2015-01-15 20:00+0700\n"
+"PO-Revision-Date: 2015-01-15 20:00+0700\n"
 "Last-Translator: SB Team <laidinhcuongvn@gmail.com>\n"
 "Language-Team: SB Team <laidinhcuongvn@gmail.com>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.7.3\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: _;__;_e;_x;_ex;_n;_nx;gettext;gettext_noop\n"
+"X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
 
-#: sb-clean.php:31
-#, php-format
-msgid "You must install plugin %1$s first! Click here to %2$s."
-msgstr ""
-
-#: sb-clean.php:31
-msgid "go back"
-msgstr ""
-
-#: sb-plugin-admin.php:14
+#: ../inc/sb-plugin-admin.php:14
 msgid "SB Clean options page"
 msgstr ""
 
-#: sb-plugin-admin.php:15
+#: ../inc/sb-plugin-admin.php:15
 msgid "Clean WPDB"
 msgstr ""
 
-#: sb-plugin-admin.php:16
+#: ../inc/sb-plugin-admin.php:16
 msgid "Clean head meta"
 msgstr ""
 
-#: sb-plugin-admin.php:24
-msgid ""
-"You can turn on or turn off the function to unset database name and password."
+#: ../inc/sb-plugin-admin.php:24
+msgid "You can turn on or turn off the function to unset database name and password."
 msgstr ""
 
-#: sb-plugin-admin.php:32
+#: ../inc/sb-plugin-admin.php:38
 msgid "You can turn on or turn off the function to clear WordPress head meta."
+msgstr ""
+
+#: ../inc/sb-plugin-install.php:19
+msgid "Error"
+msgstr ""
+
+#: ../inc/sb-plugin-install.php:19
+#, php-format
+msgid "The plugin with name %1$s has been deactivated because of missing %2$s plugin"
+msgstr ""
+
+#: ../inc/sb-plugin-install.php:29
+msgid "Settings"
 msgstr ""

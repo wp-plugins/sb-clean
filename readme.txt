@@ -3,8 +3,8 @@ Contributors: skylarkcob
 Donate link: http://hocwp.net/donate/
 Tags: sb, clean, sb plugin, sb clean, sb team
 Requires at least: 3.9
-Tested up to: 4.0.1
-Stable tag: 1.0.6
+Tested up to: 4.1
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,13 +60,19 @@ Please visit [homepage](http://hocwp.net) for more details.
 
 == Screenshots ==
 
-Please visit [homepage](http://hocwp.net) for more details.
+1. The option page for plugin SB Clean.
 
 == Upgrade Notice ==
 
 Please update SB Core before you upgrade this plugin to new version.
 
 == Changelog ==
+
+= 1.0.7 =
+* Tested up to Wordpress 4.1 version.
+* Re-struct SB Clean.
+* Add function for user clean post revision.
+* Add screenshot.
 
 = 1.0.6 =
 Update wrong text-domain.
